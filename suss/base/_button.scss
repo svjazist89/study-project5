@@ -1,0 +1,16 @@
+.baner-btn {
+    display: flex;
+    align-self: center;
+    padding: 10px 32px;
+    margin: 30px auto auto auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $fon-word-color;
+    text-decoration: none;
+    background: $hover-color;
+    border-radius: 4px;
+    border: 0px;
+}

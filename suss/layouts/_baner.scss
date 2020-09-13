@@ -1,0 +1,100 @@
+.baner-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    height: auto;
+  
+    
+  }
+ 
+  .baner {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $fon-word-color;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+
+    &-content {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-left: 237px;
+        padding-right: 237px;
+        text-align: center;
+        background-color: #2F303A;
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url("../image/baner-image.jpg");
+        
+      }
+
+  }
+  
+   
+  .baner-aside{
+      padding-top: 94px;
+  }
+  .baner-list{
+  width: calc((100% - 90px) / 4);
+  .menu-list & + & {
+    margin-left: 30px;
+  }
+  &::before{
+    content: "";
+    display: block;
+   
+    height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-color: #F5F4FA;
+    
+    background-size: contain;
+  background-position: center;
+  }
+}
+
+.baner-menu{
+    margin-top: 30px;
+    margin-bottom: 10px;  
+    
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $most-word-color;
+  text-transform: uppercase;
+  &-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-description-color;
+  }
+}
+
+  .icon-anthenna::before {
+    background-image: url("../image/baner-icons/antenna.svg");
+    background-size: auto;
+  
+  }
+  .icon-clock::before {
+    background-image: url("../image/baner-icons/clock.svg");
+    background-size: auto;
+  
+  }
+  .icon-laptop::before {
+    background-image: url("../image/baner-icons/laptop.svg");
+    background-size: auto;
+  
+  }
+  .icon-astronaut::before {
+    background-image: url("../image/baner-icons/astronaut.svg");
+    background-size: auto;
+  
+  }

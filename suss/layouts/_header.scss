@@ -1,0 +1,116 @@
+.nav{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  &-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $most-word-color;
+    text-decoration: none;
+    }
+     &-list{
+    display: flex;
+    margin-left: 85px;
+
+       &-address{
+         display: flex;
+         margin-left: auto;
+         align-items: center;
+         margin-right: 0px;
+                }
+            }
+            &-link-good {
+                display: block;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                            }
+
+            &-link-good:not(:last-child){
+                margin-right: 50px;
+                                            }
+
+
+
+
+&-link {
+ font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color:$most-word-color;
+text-decoration: none;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&-link-address:not(:last-child)
+{ margin-right: 50px;
+}
+
+&-address{
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: $text-description-color;
+text-decoration: none;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+&-link:hover,
+&-link:focus,
+&-address:hover,
+&-address:focus {
+color:$hover-color;
+}
+/* &-link-border {
+display: none;
+} */
+&-link-good {
+position: relative;
+}
+&-link-border::after{
+content: "";
+display: block;
+width: 100%;
+height: 4px;
+position: absolute;
+background-color:$hover-color;
+border-radius: 2px;
+bottom: -1px;
+}
+
+&-address:hover .icon-mail{
+ fill:$hover-color;
+}
+.icon-smartphone {
+display: inline-flex;
+width: 10px;
+height: 16px;
+vertical-align: middle;
+/* position: relative; */
+margin-right: 10px; 
+fill: currentColor;
+}
+&-address:hover .icon-smartphone{
+ fill: $hover-color;
+}
+
+}
+.icon-mail {
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+    vertical-align: middle;
+    /* position: relative; */
+    margin-right: 10px; 
+    fill: currentColor;
+    }
+  

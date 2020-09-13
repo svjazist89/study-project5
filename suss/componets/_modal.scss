@@ -1,0 +1,197 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $fon-modal-window;
+    opacity: 1;
+    scale: 1;
+    transition: opacity 2s ease-out;
+    transform: scale(1);
+    z-index: 55599;
+  }
+  .backdrop.is-hidden{
+    visibility: hidden;
+    pointer-events: 0;
+    opacity: 0;
+    scale: 0;
+  
+  }
+  .modal{
+    width: 100%;
+    max-width: 528px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background-color: $fon-word-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    
+      &-check-in{
+    display: inline-block;
+    margin-bottom: 30px;
+  
+  }
+  &-checkbox{
+    display:inline-block;
+    position: absolute;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  }
+  &-checkbox:checked + .icon-check{
+    background: url("../image/modal-check.svg");
+    object-fit: fill;
+    background-repeat: no-repeat;
+    border: 0px;
+  }
+  &-check-text{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-description-color;
+  }
+  &-button{
+    display: flex;
+    align-self: center;
+    padding: 10px 55px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $fon-word-color;
+    text-decoration: none;
+    background: $hover-color;
+    border-radius: 4px;
+    border: 0px;
+  }
+  &-button:focus,
+  &-button:hover{
+    outline: 0px;
+  }
+
+  }
+  .button-close{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-color: $fon-word-color;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &-icon{
+    display:inline-flex;
+    width: 11px;
+    height: 11px;
+    fill:$most-word-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+     &:focus,
+     &:hover{
+    outline: 0px;
+    border: 1px solid $hover-color;}
+  
+    &:focus  .button-close-icon,
+    &:hover  .button-close-icon{
+    fill:$hover-color;
+  }
+}
+ .form{
+  &-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;}
+    
+  &-title{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 100%;
+  margin-bottom: 12px;
+  }
+  &-item{
+    
+    margin-bottom: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-description-color;
+  
+  &-item-comment{
+    resize: none;
+    width:100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }}
+  &-field{
+    position: relative;
+    width:100%;
+    margin-bottom: 10px;
+  }
+  &-input{
+    height: 40px;
+    width:100%;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &-icon-modal{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: $most-word-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-input:hover,
+  &-input:focus,
+  &-item-comment:hover,
+  &-item-comment:focus{
+    outline: 0px;
+    border: 1px solid $hover-color;
+    }
+  &-input:hover + .form-icon-modal,
+  &-input:focus + .form-icon-modal{
+    fill: $hover-color;
+  }
+}
+
+  .icon-check{
+    display: inline-block;
+    vertical-align: middle;
+    /* position: absolute;
+    top: 0;
+    left:0; */
+    width: 16px;
+    height: 16px;
+    border: 2px solid $most-word-color;
+    margin-right: 7px;
+    background: $fon-word-color;
+    background-repeat: no-repeat;
+   }
+  

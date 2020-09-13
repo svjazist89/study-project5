@@ -1,0 +1,130 @@
+
+  .footer .container{
+    display: flex;
+  }
+  
+  .footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2f303a;
+
+    &-nav {
+
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $most-word-color;
+        text-transform: uppercase;
+
+        margin-top: 10px;
+        color: $fon-word-color;
+      }
+  
+      &-list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      &-list-item:not(:last-child){
+        margin-bottom: 9px;
+      }
+      
+      &-contacts,
+      &-address {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $fon-word-color;
+        text-decoration: none;
+      }
+      &-address {
+        color: rgba(255, 255, 255, 0.6);
+      }  
+
+      &-social{
+        display: flex;
+        margin-top: 20px;
+      }
+      
+      &-social-link {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &-social-item:not(:last-child){
+        margin-right: 10px;
+      }
+      
+      &-social-link:hover,
+      &-social-link:focus{
+        background-color: $hover-color;
+      }
+      &-subskribe{
+        margin-left: 93px;
+      }
+  }
+
+  
+  .come-to-us{
+    margin-left: 70px;
+  }
+
+
+  .icon-footer {
+    fill: $fon-word-color;
+  }
+  .send-form{
+    display: inline-flex;
+    margin-top:20px;
+    /* outline: 2px solid tomato; */
+  }
+  .input-send{
+    width:357px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .send-button{
+    display: flex;
+    background-color: $hover-color;
+    outline: 0px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    align-items: center;
+    
+  }
+  .send-button-text{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,875;
+    letter-spacing: 0.06em;
+    color: $fon-word-color;
+  }
+  .icon-send{
+    margin-left: 10px;
+    height:24px;
+    width: 24px;
+    fill: $fon-word-color;
+  }
+  
+  

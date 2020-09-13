@@ -1,0 +1,101 @@
+.comrade-container {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.comrade {
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $most-word-color;
+  text-align: center;
+
+  &-menu{
+    margin-top: 30px;
+    margin-bottom: 10px;    
+  }
+  &-list{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+  }
+    &-container{
+        background: #F5F4FA;
+      }
+      &-menu,
+      &-menu-list {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: $most-word-color;
+      }
+      
+      &-list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc((100% - 90px) / 4);
+        height: auto;
+        padding-bottom: 30px;
+        background: $fon-word-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      }
+      &-list &-list-item + &-list-item {
+        margin-left: 30px;
+      }
+      
+      &-menu-list {
+        color: $text-description-color;
+      }
+      &-menu-img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      &-social{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 28px;
+        padding-left: 44px;
+        padding-right: 44px;
+      }
+      &-social-item{
+        display: flex;
+        justify-content: space-around;
+      }
+      &-social-item:not(:last-child){
+        margin-right: 10px;
+      }
+      &-social-link {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      
+        transition-property: $hover-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+        }
+        &-social-link:hover,
+&-social-link:focus {
+  background-color: $hover-color;
+}
+&-social-link:hover .icon-comrade,
+&-social-link:focus .icon-comrade {
+  fill: $fon-word-color;
+}
+}
+.icon-comrade {
+    fill: $icons-color;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
